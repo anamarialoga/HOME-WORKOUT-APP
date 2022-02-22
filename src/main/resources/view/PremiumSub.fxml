@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="814.0" style="-fx-background-color: #708090;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerPremiumSub">
+    <children>
+        <Pane layoutX="-1.0" prefHeight="140.0" prefWidth="814.0" style="-fx-background-color: #708090;">
+            <children>
+                <Label layoutX="149.0" layoutY="58.0" prefHeight="75.0" prefWidth="587.0" text="Subscribe to Premium" textFill="#30424d">
+                    <font>
+                        <Font name="Britannic Bold" size="48.0" />
+                    </font>
+                </Label>
+                <Button layoutX="40.0" layoutY="31.0" mnemonicParsing="false" onAction="#goBackk" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #709090; -fx-background-radius: 90; -fx-effect: dropshadow( gaussian , rgba(10,10,10,10.9) , 10,0,7,10 )" text="     Back" textFill="#000000db" />
+                <ImageView fitHeight="16.0" fitWidth="17.0" layoutX="50.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@undo.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="75.0" fitWidth="88.0" layoutX="624.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@premium.png" />
+                    </image>
+                </ImageView>
+            </children></Pane>
+        <TextField layoutX="127.0" layoutY="224.0" prefHeight="31.0" prefWidth="257.0" promptText="xxxx-xxxx-xxxx-xxxx" style="-fx-background-color: #709090;" />
+        <Label layoutX="25.0" layoutY="224.0" prefHeight="31.0" prefWidth="102.0" text="Card Number:">
+         <font>
+            <Font name="Marlett" size="15.0" />
+         </font></Label>
+        <Label layoutX="25.0" layoutY="181.0" prefHeight="31.0" prefWidth="102.0" text="Name:">
+            <font>
+                <Font name="Marlett" size="15.0" />
+            </font></Label>
+        <TextField fx:id="nameField" layoutX="127.0" layoutY="181.0" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: #709090;" />
+        <Label layoutX="25.0" layoutY="267.0" prefHeight="31.0" prefWidth="102.0" text="CVV:">
+         <font>
+            <Font name="Marlett" size="15.0" />
+         </font></Label>
+        <TextField fx:id="cvvField" layoutX="127.0" layoutY="267.0" prefHeight="31.0" prefWidth="56.0" promptText="xxx" style="-fx-background-color: #709090;" />
+        <Label layoutX="25.0" layoutY="318.0" prefHeight="21.0" prefWidth="411.0" text="I agree to the Terms of Service and Privacy Policy">
+         <font>
+            <Font name="Marlett" size="12.0" />
+         </font></Label>
+        <CheckBox fx:id="agree" layoutX="376.0" layoutY="320.0" mnemonicParsing="false" />
+        <Button layoutX="120.0" layoutY="380.0" mnemonicParsing="false" onAction="#makePayment" prefHeight="66.0" prefWidth="183.0" style="-fx-background-color: #709090; -fx-background-radius: 90;-fx-effect: dropshadow( gaussian , rgba(10,10,10,10.9) , 10,0,7,10 )" text="Buy with 9,99$/month">
+         <font>
+            <Font name="Marlett" size="13.0" />
+         </font></Button>
+        <Text fx:id="messageField" layoutX="214.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="444.6708984375" />
+        <Label layoutX="533.0" layoutY="170.0" prefHeight="42.0" prefWidth="251.0" text="Already a member?" textFill="#30424d">
+            <font>
+                <Font name="Britannic Bold" size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="474.0" layoutY="224.0" prefHeight="31.0" prefWidth="118.0" text="Enter your Name:">
+         <font>
+            <Font name="Marlett" size="15.0" />
+         </font></Label>
+        <TextField fx:id="checkName" layoutX="601.0" layoutY="224.0" prefHeight="31.0" prefWidth="183.0" style="-fx-background-color: #709090;" />
+        <Button layoutX="544.0" layoutY="283.0" mnemonicParsing="false" onAction="#goToPremiumWindow" prefHeight="66.0" prefWidth="183.0" style="-fx-background-color: #709090; -fx-background-radius: 90;-fx-effect: dropshadow( gaussian , rgba(10,10,10,10.9) , 10,0,7,10 )" text="Enter">
+         <font>
+            <Font name="Marlett" size="15.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

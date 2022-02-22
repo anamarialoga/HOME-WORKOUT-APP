@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="896.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerWorkout2">
+    <children>
+        <GridPane layoutX="9.0" layoutY="190.0" prefHeight="428.0" prefWidth="880.0">
+            <children>
+                <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#goToBodyBuilding" prefHeight="375.0" prefWidth="297.0" style="-fx-background-color: #212121;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <graphic>
+                        <ImageView fitHeight="347.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@maxresdefault.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#goToStrengthBuilding" prefHeight="399.0" prefWidth="318.0" style="-fx-background-color: #212121;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <graphic>
+                        <ImageView fitHeight="347.0" fitWidth="304.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@1529868683_maxresdefault.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#goToFatBurning" prefHeight="390.0" prefWidth="301.0" style="-fx-background-color: #212121;" GridPane.rowIndex="2">
+                    <graphic>
+                        <ImageView fitHeight="347.0" fitWidth="292.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@bodybuild.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+            </children>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="293.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="302.0" minWidth="10.0" prefWidth="294.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="341.0" minWidth="10.0" prefWidth="277.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <Button layoutX="40.0" layoutY="37.0" mnemonicParsing="false" onAction="#goBackk" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #709090; -fx-background-radius: 90;-fx-effect: dropshadow( gaussian , rgba(10,10,10,10.9) , 10,0,7,10 )" text="     Back" textFill="#000000db" />
+        <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="50.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@undo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="102.0" layoutY="178.0" text="Fat Burn" textFill="#709090">
+            <font>
+                <Font name="Britannic Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="352.0" layoutY="178.0" text="Strength Building" textFill="#709090">
+            <font>
+                <Font name="Britannic Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="674.0" layoutY="178.0" text="Body Building" textFill="#709090">
+            <font>
+                <Font name="Britannic Bold" size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

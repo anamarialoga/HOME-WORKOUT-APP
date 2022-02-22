@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="508.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerReg1">
+    <children>
+        <Label alignment="CENTER" layoutX="32.0" layoutY="70.0" prefHeight="54.0" prefWidth="452.0" text="Choose the type for your account" textAlignment="CENTER" textFill="#94a6b5">
+            <font>
+                <Font name="Britannic Bold" size="28.0" />
+            </font>
+        </Label>
+        <TextField layoutX="-2.0" layoutY="22.0" style="-fx-background-color: #212121;" />
+        <AnchorPane layoutX="35.0" layoutY="124.0" prefHeight="4.0" prefWidth="445.0" style="-fx-background-color: #708090;" />
+        <Button layoutX="63.0" layoutY="185.0" mnemonicParsing="false" onAction="#goToCustomerReg" prefHeight="30.0" prefWidth="151.0" style="-fx-background-color: #708090; -fx-background-radius: 90;-fx-effect: dropshadow( gaussian , rgba(10,10,10,10.9) , 10,0,7,10 )" text="Customer account" />
+      <Button layoutX="276.0" layoutY="185.0" mnemonicParsing="false" onAction="#goToTrainerReg" prefHeight="30.0" prefWidth="151.0" style="-fx-background-color: #708090; -fx-background-radius: 90;-fx-effect: dropshadow( gaussian , rgba(10,10,10,10.9) , 10,0,7,10 )" text="Trainer account" />
+      <Button layoutX="30.0" layoutY="22.0" mnemonicParsing="false" onAction="#goBack" prefHeight="31.0" prefWidth="73.0" style="-fx-background-color: #333131; -fx-background-radius: 90;-fx-effect: dropshadow( gaussian , rgba(10,10,10,10.9) , 10,0,7,10 )" text="     Back" textFill="#000000db" />
+      <ImageView fitHeight="15.0" fitWidth="29.0" layoutX="41.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@undo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
